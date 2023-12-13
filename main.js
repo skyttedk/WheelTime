@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   registerPeriodicBackgroundSync();
                 });
 
-              } else if (permissionStatus.state === 'prompt') {
+              } else if (permissionStatus.state === 'denied') {
                 // Permission is not granted yet, so request it
                 navigator.permissions.request({ name: 'periodic-background-sync' })
                   .then((newPermissionStatus) => {
