@@ -1,6 +1,6 @@
 {
-  "short_name": "GPS Logger",
-  "name": "GPS Logger PWA",
+  "short_name": "WheelTime",
+  "name": "WheelTime",
   "description": "An app that logs GPS coordinates locally",
   "start_url": ".",
   "display": "standalone",
