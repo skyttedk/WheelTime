@@ -1,0 +1,4 @@
+pwa enb skal ikke synkronisere med server, men blot gemme data lokale.. og notifisere hvis der et issue..
+
+
+pwa run background!!

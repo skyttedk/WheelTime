@@ -1,0 +1,13 @@
+{
+  "short_name": "GPS Logger",
+  "name": "GPS Logger PWA",
+  "description": "An app that logs GPS coordinates locally",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#317EFB",
+  "permissions": ["geolocation"],
+  "icons": [
+    // Add various icon sizes here
+  ]
+}
