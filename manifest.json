@@ -7,7 +7,9 @@
   "background_color": "#FFFFFF",
   "theme_color": "#317EFB",
   "permissions": ["geolocation"],
-  "icons": [
-    // Add various ic on sizes here
-  ]
+  "icons": [{
+    "src": "/icon.png",
+    "type": "image/svg+xml",
+    "sizes": "144x144"
+  }]
 }
