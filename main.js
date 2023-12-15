@@ -58,8 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const logPositionBtn = document.getElementById('log-position');
   logPositionBtn.addEventListener('click', logCurrentPosition);
 
-  // Initiate logging positions at app start
-  logCurrentPosition();
 });
 
 async function registerPeriodicBackgroundSync(registration) {
@@ -78,6 +76,7 @@ async function registerPeriodicBackgroundSync(registration) {
           // Minimum interval at which the sync could trigger (in milliseconds)
           minInterval: 1 * 60 * 1000, // 5 minutes
         });
+        console.error(`Periodic Sync registered`);
         debugger;
       } catch (e) {
         console.error(`Periodic Sync could not be registered: ${e}`);

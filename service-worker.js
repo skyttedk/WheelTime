@@ -27,6 +27,7 @@ self.addEventListener('fetch', event => {
 // Additional background sync or push messages logic could go here in the future
 
 self.addEventListener('periodicsync', event => {
+  console.log('Sync event fired!', event);
   if (event.tag === 'gps-log-sync') {
     //event.waitUntil(logGPSPeriodically());
 
