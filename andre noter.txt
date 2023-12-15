@@ -2,3 +2,10 @@ pwa enb skal ikke synkronisere med server, men blot gemme data lokale.. og notif
 
 
 pwa run background!!
+
+
+se eksempel heere !!
+
+
+https://webplatformapis.com/periodic_sync/periodicSync_improved.html
+
