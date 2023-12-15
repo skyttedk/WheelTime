@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 navigator.serviceWorker.ready.then(function(registration) {
                   // Now register for background sync because the service worker is ready
-                  registerPeriodicBackgroundSync();
+                  registerPeriodicBackgroundSync(registration);
                 });
 
               } else if (permissionStatus.state === 'denied') {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                       navigator.serviceWorker.ready.then(function(registration) {
                         // Now register for background sync because the service worker is ready
-                        registerPeriodicBackgroundSync();
+                        registerPeriodicBackgroundSync(registration);
                       });
 
                     } else {
