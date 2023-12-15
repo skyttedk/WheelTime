@@ -12,7 +12,7 @@ self.addEventListener('install', event => {
     .then(cache => cache.addAll(urlsToCache))
     .catch(error => {
       // This will give you more information on the error.
-      console.error('Failed to cache assets:', error);
+      console.log('Failed to cache assets:', error);
     })
   );
 });
