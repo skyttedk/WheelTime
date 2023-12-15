@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         if ('serviceWorker' in navigator && 'periodicSync' in ServiceWorkerRegistration.prototype) {
-          console.log('Periodic Background Sync is supported!');
+          //console.log('Periodic Background Sync is supported!');
 
           //Make sure we have permissions
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   logPositionBtn.addEventListener('click', logCurrentPosition);
 
   // Initiate logging positions at app start
-  startLoggingPositions(5); // Logs every 5 minutes
+  startLoggingPositions(1); // Logs every 5 minutes
 });
 
 async function registerPeriodicBackgroundSync(registration) {

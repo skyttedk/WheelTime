@@ -28,7 +28,10 @@ self.addEventListener('fetch', event => {
 
 self.addEventListener('periodicsync', event => {
   if (event.tag === 'gps-log-sync') {
-    event.waitUntil(logGPSPeriodically());
+    //event.waitUntil(logGPSPeriodically());
+
+    event.waitUntil(logCurrentPosition());
+
   }
 });
 
