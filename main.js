@@ -74,10 +74,11 @@ async function registerPeriodicBackgroundSync(registration) {
     if (status.state === 'granted') {
       try {
         // Attempt to register the periodic sync
-        await registration.periodicSync.register('gps-log-sync', {
+        let res = await registration.periodicSync.register('gps-log-sync', {
           // Minimum interval at which the sync could trigger (in milliseconds)
           minInterval: 1 * 60 * 1000, // 5 minutes
         });
+        debugger;
       } catch (e) {
         console.error(`Periodic Sync could not be registered: ${e}`);
       }
