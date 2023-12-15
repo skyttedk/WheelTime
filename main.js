@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   logPositionBtn.addEventListener('click', logCurrentPosition);
 
   // Initiate logging positions at app start
-  startLoggingPositions(1); // Logs every 5 minutes
+  logCurrentPosition();
 });
 
 async function registerPeriodicBackgroundSync(registration) {
@@ -76,7 +76,7 @@ async function registerPeriodicBackgroundSync(registration) {
         // Attempt to register the periodic sync
         await registration.periodicSync.register('gps-log-sync', {
           // Minimum interval at which the sync could trigger (in milliseconds)
-          minInterval: 5 * 60 * 1000, // 5 minutes
+          minInterval: 1 * 60 * 1000, // 5 minutes
         });
       } catch (e) {
         console.error(`Periodic Sync could not be registered: ${e}`);
