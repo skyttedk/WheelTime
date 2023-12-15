@@ -15,7 +15,7 @@
     <button id="log-position">Log Position</button>
 
     <!-- Hidden element to store the coordinates -->
-    <div id="coordinates" style="display: none;"></div>
+    <div id="coordinates" style="display: "></div>
 </body>
 
 </html>

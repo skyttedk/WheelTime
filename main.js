@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function registerPeriodicBackgroundSync(registration) {
   // Check if Periodic Background Sync is supported
   if ('serviceWorker' in navigator && 'periodicSync' in ServiceWorkerRegistration.prototype) {
-    debugger;
+
     const status = await navigator.permissions.query({
       name: 'periodic-background-sync',
     });
@@ -103,13 +103,7 @@ function logCurrentPosition() {
   }
 }
 
-function startLoggingPositions(intervalMinutes) {
-  // Convert minutes to milliseconds
-  const intervalMs = intervalMinutes * 60 * 1000;
 
-  // Set interval to log position
-  setInterval(logCurrentPosition, intervalMs);
-}
 
 function savePositionLocally(positionData) {
   const positions = JSON.parse(localStorage.getItem('positions')) || [];
